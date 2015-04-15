@@ -1,9 +1,11 @@
 <!DOCTYPE html>
+
 <html class="no-js" lang="en">
 <head>
 	<meta charset="utf-8">
+
 	<title>Brinkman Surveying &amp; Mapping, Inc.</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 	<link href="css/normalize.css" media="screen" rel="stylesheet">
 	<link href="css/foundation.css" media="screen" rel="stylesheet">
@@ -17,73 +19,55 @@
 
 <body>
 	<header>
-        <nav>
-            <div class="row medium-uncollapse large-collapse">
+		<nav>
+			<div class="row medium-uncollapse large-collapse">
+				<div class="medium-6 columns hide-for-small">
+					<a href="index.html"><img src="img/logo.svg"></a>
+				</div>
 
-                <div class="medium-6 columns hide-for-small">
-                    <a href="index.html"><img src="img/logo.svg"></a>
-                </div>
+				<div class="medium-6 columns text-center hide-for-medium-up"><img src="img/logo_sm.png" style="opacity:0.25;margin-bottom:-20px;margin-top:0;"></div>
 
-                <div class="medium-6 columns text-center hide-for-medium-up">
-                    <img src="img/logo_sm.png" style="opacity:0.25;margin-bottom:-20px;margin-top:0;">
-                </div>
+				<div class="medium-6 columns">
+					<div class="icon-bar four-up show-for-large-up">
+						<a href="index.html">Home</a> <a href="services.html">Services</a> <a href="estimates.html">Estimates</a> <a href="contact.html">Contact</a>
+					</div>
 
-                <div class="medium-6 columns">
-                    <div class="icon-bar four-up show-for-large-up">
-                      <a href="index.html">Home</a>
-                      <a href="services.html">Services</a>
-                      <a href="estimates.html">Estimates</a>
-                      <a href="contact.html">Contact</a>
-                    </div>
-            
-                    <div class="icon-bar four-up hide-for-large-up">
-                      <a class="item" href="index.html">
-                        <i class="fi-home"></i>
-                      </a>
-                      <a class="item" href="services.html">
-                        <i class="fi-info"></i>
-                      </a>
-                      <a class="item" href="estimates.html">
-                        <i class="fi-clipboard"></i>
-                      </a>
-                      <a class="item" href="contact.html">
-                        <i class="fi-mail"></i>
-                      </a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
+					<div class="icon-bar four-up hide-for-large-up">
+						<a class="item fi-home" href="index.html" style="font-style: italic"></a> <a class="item fi-info" href="services.html" style="font-style: italic"></a> <a class="item fi-clipboard" href="estimates.html" style="font-style: italic"></a> <a class="item fi-mail" href="contact.html" style="font-style: italic"></a>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
 
 	<section>
-
 		<div class="estimate">
 			<div class="row">
 				<h1 class="inside">Get an Estimate</h1>
 			</div>
 		</div>
-<div class="row">
-		<div class="panel">
 
+		<div class="row">
+			<div class="panel">
 				<form action="mailer.php" class="text3" method="post">
 					<div class="medium-10 small-12 small-centered columns">
 						<h3>Basic Information</h3>
 
 						<div class="row">
-
-							<div class="medium-5 columns">
+						
+								<div class="medium-4 columns">
 								<label>Begin on the following date</label> <input name="Date" type="datetime">
+							</div>
+							
+							<div class="medium-5 columns">
+							<label>Project Address</label> <input name="Project Address" type="text">
 							</div>
 
 							<div class="medium-3 columns">
 								<label>How Many Acres:</label> <input name="Acres" type="number">
 							</div>
-
-							<div class="medium-4 columns end">
-								<label>Range:</label> <input name="Range" type="range">
-							</div>
-
 						</div>
+
 
 						<fieldset>
 							<legend>Select the Survey(s) you need.</legend>
@@ -106,54 +90,47 @@
 								<li><label>Other:</label><input name="other" placeholder="Please Specify" type="text"></li>
 							</ul>
 						</fieldset>
-
 					</div>
 
 					<div class="row">
-
-						<div class="large-12 columns">
+						<div class="medium-10 small-12 small-centered columns">
 							<h3>Details</h3>
-						</div>
 
+						
 						<div class="medium-4 columns">
 							<fieldset>
-								<legend>Client</legend>
-                <label>Name</label>
-                <input name="Client Name" type="text">
-                <label>Billing Address</label>
-                <input name="Billing Address" type="text">
-                <label>Phone</label>
-                <input name="Phone" type="tel">
-                <label>Fax</label>
-                <input name="Fax" type="tel">
+								<legend>Client</legend> 
+								<label>Name</label> <input name="Client Name" type="text"> <label>Billing Address</label> <input name="Billing Address" type="text"> 
+								<label>Phone</label> <input name="Phone" type="tel"> 
+								<label>Fax</label> <input name="Fax" type="tel">
 							</fieldset>
 						</div>
-
 						<div class="medium-4 columns">
 							<fieldset>
-								<legend>Title Company</legend> <label>Name</label> <input name="Title Company" type="text"> <label>Tax Parcel #</label> <input name="Tax Parcel Number" type="number"> <label>Section</label> <input maxlength="3" name="Section" type="text">
-                <label>Township</label> <input maxlength="3" name="Township" type="text">
+								<legend>Realtor</legend> 
+								<label>Name</label> <input name="Realtor Name" type="text"> 
+								<label>Phone</label> <input name="Realtor Phone" type="tel">  
+								<label>Closing Date</label> <input name="Closing Date" type="date"> 
+								<label>Closing Agent</label> <input name="Closing Agent" type="text">
 							</fieldset>
 						</div>
+			
 
 						<div class="medium-4 columns">
-							<fieldset>
-								<legend>Realtor</legend>
-                <label>Name</label>
-                <input name="Realtor Name" type="text">
-                <label>Phone</label>
-                <input name="Realtor Phone" type="tel">
-                <label>Project Address</label>
-                <input name="Project Address" type="text">
-                <label>Closing Date</label>
-                <input name="Closing Date" type="date">
-                <label>Closing Agent</label>
-                <input name="Closing Agent" type="text">
-							</fieldset>
-						</div>
+								<fieldset>
+								<legend>Additional Details</legend>
+								<label>Title Company</label> <input name="Title Company" type="text"> <label>Tax Parcel #</label> <input name="Tax Parcel Number" type="number"> <label>Section</label> <input maxlength="3" name="Section" type="text"> <label>Township</label> <input maxlength="3" name="Township" type="text">
+									<label>Range:</label> <input name="Range" type="text"maxlength="3">
+									</fieldset>
+								</div>
 
+
+						
 					</div><!--End Row -->
-				</form>
+					<div class="large-12 columns text-center">
+					<p>Please fax or email us a copy of your legal description.</p>
+					</div>
+									</form>
 			</div><!--End Row -->
 		</div><!-- End Panel -->
 
