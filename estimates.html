@@ -1,117 +1,184 @@
-﻿<!DOCTYPE html>
-
-<html>
+<!DOCTYPE html>
+<html class="no-js" lang="en">
 <head>
-    <meta charset="utf-8">
-
-    <title>Brinkman Surveying &amp; Mapping, Inc.</title>
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-    <link href="style.css" media="screen" rel="stylesheet">
-    <style media="screen" type="text/css">
-/*<![CDATA[*/@import 'style.css';/*]]>*/
-    </style>
-    <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel=
-    'stylesheet' type='text/css'>
-    <script src="https://www.google.com/jsapi" type="text/javascript"></script>
+	<meta charset="utf-8">
+	<title>Brinkman Surveying &amp; Mapping, Inc.</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<link href="css/normalize.css" media="screen" rel="stylesheet">
+	<link href="css/foundation.css" media="screen" rel="stylesheet">
+	<link href="css/style.css" media="screen" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
+	<script src="js/vendor/modernizr.js"></script>
+	<style media="screen" type="text/css">
+/*<![CDATA[*/@import 'css/style.css';/*]]>*/
+	</style>
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <a class="floatleft" href="index.html"><img src="img/logo.png"></a>
+	<header>
+        <nav>
+            <div class="row medium-uncollapse large-collapse">
 
-            <nav>
-                <a href="index.html">Main</a> <a class="selected" href=
-                "services.html">Services</a> <a href=
-                "estimates.html">Estimates</a> <a href=
-                "contact.html">Contact</a>
-            </nav>
-        </div>
+                <div class="medium-6 columns hide-for-small">
+                    <a href="index.html"><img src="img/logo.svg"></a>
+                </div>
+
+                <div class="medium-6 columns text-center hide-for-medium-up">
+                    <img src="img/logo_sm.png" style="opacity:0.25;margin-bottom:-20px;margin-top:0;">
+                </div>
+
+                <div class="medium-6 columns">
+                    <div class="icon-bar four-up show-for-large-up">
+                      <a href="index.html">Home</a>
+                      <a href="services.html">Services</a>
+                      <a href="estimates.html">Estimates</a>
+                      <a href="contact.html">Contact</a>
+                    </div>
+            
+                    <div class="icon-bar four-up hide-for-large-up">
+                      <a class="item" href="index.html">
+                        <i class="fi-home"></i>
+                      </a>
+                      <a class="item" href="services.html">
+                        <i class="fi-info"></i>
+                      </a>
+                      <a class="item" href="estimates.html">
+                        <i class="fi-clipboard"></i>
+                      </a>
+                      <a class="item" href="contact.html">
+                        <i class="fi-mail"></i>
+                      </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <section>
-        <div class="inner" style=
-        "background:url(img/estimate.jpg) top center no-repeat">
-            <div class="hero">
-                <h1>Get an Estimate</h1>
-            </div>
+	<section>
 
-            <div class="column_3qtr">
-                <form action="mailer.php" class="text3" method="post">
-				 
-				<h4>Select the Survey(s) you need.</h4>
-				 
-				<li class="inline"><label>Boundary</label><input name="Boundary" type="checkbox"> </li>
-				<li class="inline"><label>Mortgage</label><input name="Mortgage" type="checkbox"></li>
-				<li class="inline"><label>Final</label><input name="Final" type="checkbox"></li>
-				<li class="inline"><label>Foundation</label><input name="Foundation" type="checkbox"> </li>
-				<li class="inline"><label>Building</label><input name="Building" type="checkbox"> </li>
-				<li class="inline"><label>Permit</label><input name="Permit" type="checkbox"></li>
-				<li class="inline"><label>Elevation Certificate</label><input name="Elevation" type="checkbox"></li>
-				
-				<!--select>
-				<option value="Boundary">Boundary</option>
-				<option value="Mortgage">Mortgage</option>
-				<option value="Final">Final</option>
-				<option value="Foundation">Foundaion</option>
-				<option value="Building">Building</option>
-				<option value="Permit">Permit</option>
-				<option value="Elevation Certificate">Elevation Certificate</option>
-				</select-->
-				<li><label class="inline">Other:</label><input name="other" placeholder="Please Specify"></li>
-					
+		<div class="estimate">
+			<div class="row">
+				<h1 class="inside">Get an Estimate</h1>
 			</div>
-			
-			<div class="border"></div>
-	
-			<h4>Details</h4>
-			
-					<ul class="column_third_left">
-						<li><label>Date</label><input name="Date"></li>
-						<li><label>Client Name</label><input name="Client Name:"></li>
-						<li><label>Billing Address</label><input name="Billing Address"></li>
-						<li><label>Phone</label><input name="Phone"> </li>
-						<li><label>Fax</label><input name="Fax"></li>
-					</ul>
-					
-					<div style="background:#fff; box-shadow: 0 1px 2px #555; display:inline-block">
-					
-					<ul class="column_third_left">
-						<li><label>Realtor Name</label><input name="Realtor Name"></li>
-						<li><label>Realtor Phone</label><input name="Realtor Phone"></li>
-						<li><label>Project Address</label><input name="Project Address"></li>
-						<li><label>Closing Date: </label><input name="Closing Date:"></li>
-						<li><label>Closing Agent: </label><input name="Closing Agent:"> </li>
-					</ul>
-				
-				
-                    <ul class="column_third_left">
-						
-						<li><label>Title Company:</label> <input name="Title Company:"></li>
-					    <li><label>Tax Parcel #: </label><input name="Tax Parcel #:"></li>
-					    <li><label>Section:</label> <input maxlength="3" name="Section"></li>
-					    <li><label>Township: </label><input maxlength="3" name="Township"> </li>
-					    <li><label>Range:</label><input maxlength="3" name="Range:"></li>
-					    <li><label> How Many Acres:</label> <input name="Acres:">
-					</ul>
-					
-					</div>
-				<input type="submit" value="Submit"></input>
-				</form>
-            
 		</div>
+<div class="row">
+		<div class="panel">
 
-    </section>
+				<form action="mailer.php" class="text3" method="post">
+					<div class="medium-10 small-12 small-centered columns">
+						<h3>Basic Information</h3>
 
-    <footer>
-        <div class="border"></div><a href=
-        "http://www.dustinaguilar.com"><img class="floatright" src=
-        "img/logo_f.png"></a> <small class="floatright">©2013 Brinkman
-        Surveying and Mapping, Inc.</small>
+						<div class="row">
 
-        <h5>Phone: <small><strong class="orange">(352)
-        374-7707</strong></small> | Fax: <small><strong class="orange">(352)
-        374-8757</strong></small></h5>
-    </footer>
+							<div class="medium-5 columns">
+								<label>Begin on the following date</label> <input name="Date" type="datetime">
+							</div>
+
+							<div class="medium-3 columns">
+								<label>How Many Acres:</label> <input name="Acres" type="number">
+							</div>
+
+							<div class="medium-4 columns end">
+								<label>Range:</label> <input name="Range" type="range">
+							</div>
+
+						</div>
+
+						<fieldset>
+							<legend>Select the Survey(s) you need.</legend>
+
+							<ul class="inline-list no-bullet">
+								<li><label>Boundary</label><input name="Boundary" type="checkbox"></li>
+
+								<li><label>Mortgage</label><input name="Mortgage" type="checkbox"></li>
+
+								<li><label>Final</label><input name="Final" type="checkbox"></li>
+
+								<li><label>Foundation</label><input name="Foundation" type="checkbox"></li>
+
+								<li><label>Building</label><input name="Building" type="checkbox"></li>
+
+								<li><label>Permit</label><input name="Permit" type="checkbox"></li>
+
+								<li><label>Elevation Certificate</label><input name="Elevation" type="checkbox"></li>
+
+								<li><label>Other:</label><input name="other" placeholder="Please Specify" type="text"></li>
+							</ul>
+						</fieldset>
+
+					</div>
+
+					<div class="row">
+
+						<div class="large-12 columns">
+							<h3>Details</h3>
+						</div>
+
+						<div class="medium-4 columns">
+							<fieldset>
+								<legend>Client</legend>
+                <label>Name</label>
+                <input name="Client Name" type="text">
+                <label>Billing Address</label>
+                <input name="Billing Address" type="text">
+                <label>Phone</label>
+                <input name="Phone" type="tel">
+                <label>Fax</label>
+                <input name="Fax" type="tel">
+							</fieldset>
+						</div>
+
+						<div class="medium-4 columns">
+							<fieldset>
+								<legend>Title Company</legend> <label>Name</label> <input name="Title Company" type="text"> <label>Tax Parcel #</label> <input name="Tax Parcel Number" type="number"> <label>Section</label> <input maxlength="3" name="Section" type="text">
+                <label>Township</label> <input maxlength="3" name="Township" type="text">
+							</fieldset>
+						</div>
+
+						<div class="medium-4 columns">
+							<fieldset>
+								<legend>Realtor</legend>
+                <label>Name</label>
+                <input name="Realtor Name" type="text">
+                <label>Phone</label>
+                <input name="Realtor Phone" type="tel">
+                <label>Project Address</label>
+                <input name="Project Address" type="text">
+                <label>Closing Date</label>
+                <input name="Closing Date" type="date">
+                <label>Closing Agent</label>
+                <input name="Closing Agent" type="text">
+							</fieldset>
+						</div>
+
+					</div><!--End Row -->
+				</form>
+			</div><!--End Row -->
+		</div><!-- End Panel -->
+
+		<div class="large-12 columns text-center">
+			<input class="cta button" type="submit" value="Submit">
+		</div>
+	</section>
+	<hr>
+
+	<footer>
+		<div class="row">
+			<div class="large-6 columns text-center">
+				<h4><small>Phone</small> <strong class="orange">(352) 374-7707</strong> <small>Fax</small> <strong class="orange">(352) 374-8757</strong></h4>
+			</div>
+
+			<div class="large-6 columns text-center">
+				<strong><small>©2015 Brinkman Surveying and Mapping, Inc.</small></strong>
+			</div>
+
+			<div class="large-12 columns text-center">
+				<a href="http://www.dustinaguilar.com"><img src="img/logo_f.png"></a>
+			</div>
+		</div>
+	</footer><script src="js/vendor/jquery.js"></script> <script src="js/foundation.min.js"></script> <script>
+$(document).foundation();
+	</script>
 </body>
 </html>
