@@ -12,6 +12,7 @@
 	<link href="css/style.css" media="screen" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
 	<script src="js/vendor/modernizr.js"></script>
+	<script src="js/button.js"></script>
 	<style media="screen" type="text/css">
 /*<![CDATA[*/@import 'css/style.css';/*]]>*/
 	</style>
@@ -49,7 +50,7 @@
 
 		<div class="row">
 			<div class="panel">
-				<form name ="estimate" action="mailer.php" class="text3" method="post">
+				<form id="estimate" name="estimate" action="mailer.php" method="post" onsubmit="return validate.check(this)">
 					<div class="medium-10 small-12 small-centered columns">
 						<h3>Basic Information</h3>
 
@@ -72,11 +73,9 @@
 						</div>
 					</div>
 			
-						<div class="medium-10 small-12 small-centered columns">
-	
+					<div class="medium-10 small-12 small-centered columns">
 						<fieldset>
 							<legend>Select the Survey(s) you need.</legend>
-
 							<ul class="inline-list no-bullet">
 								<li><label>Boundary</label>
 								<input name="Boundary" type="checkbox"></li>
@@ -104,12 +103,12 @@
 							</ul>
 						</fieldset>
 					</div>
-						</div>
-					<div class="row">
-						<div class="medium-10 small-12 small-centered columns">
+				</div>
+
+				<div class="row">
+					<div class="medium-10 small-12 small-centered columns">
 						<h3>Details</h3>
 
-						
 						<div class="medium-4 columns">
 							<fieldset>
 								<legend>Client</legend> 
@@ -158,13 +157,14 @@
 					<div class="large-12 columns text-center">
 						<p>Please fax or email us a copy of your legal description.</p>
 					</div>
+
+					<div class="large-12 columns text-center">
+						<input class="button cta"type="submit" value="Submit" onClick="submit()"/>
+					</div>
 				</form>
 			</div><!--End Row -->
 		</div><!-- End Panel -->
 
-		<div class="large-12 columns text-center">
-			<input type="submit" value="Submit"/>
-		</div>
 	</section>
 	<hr>
 
@@ -184,6 +184,9 @@
 		</div>
 	</footer><script src="js/vendor/jquery.js"></script> <script src="js/foundation.min.js"></script> <script>
 $(document).foundation();
+	</script>
+	<script language="JavaScript">
+	$(document).getElementById("estimate").submit();
 	</script>
 </body>
 </html>
