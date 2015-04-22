@@ -49,93 +49,121 @@
 
 		<div class="row">
 			<div class="panel">
-				<form action="mailer.php" class="text3" method="post">
+				<form name ="estimate" action="mailer.php" class="text3" method="post">
 					<div class="medium-10 small-12 small-centered columns">
 						<h3>Basic Information</h3>
 
 						<div class="row">
 						
-								<div class="medium-4 columns">
-								<label>Begin on the following date</label> <input name="Date" type="datetime">
+							<div class="medium-4 columns">
+								<label>Begin on the following date</label> 
+								<input name="Date" type="datetime">
 							</div>
 							
 							<div class="medium-5 columns">
-							<label>Project Address</label> <input name="Project Address" type="text">
+								<label>Project Address</label> 
+								<input name="Project Address" type="text">
 							</div>
 
 							<div class="medium-3 columns">
-								<label>How Many Acres:</label> <input name="Acres" type="number">
+								<label>How Many Acres:</label> 
+								<input name="Acres" type="number">
 							</div>
 						</div>
-
-
+					</div>
+			
+						<div class="medium-10 small-12 small-centered columns">
+	
 						<fieldset>
 							<legend>Select the Survey(s) you need.</legend>
 
 							<ul class="inline-list no-bullet">
-								<li><label>Boundary</label><input name="Boundary" type="checkbox"></li>
+								<li><label>Boundary</label>
+								<input name="Boundary" type="checkbox"></li>
 
-								<li><label>Mortgage</label><input name="Mortgage" type="checkbox"></li>
+								<li><label>Mortgage</label>
+								<input name="Mortgage" type="checkbox"></li>
 
-								<li><label>Final</label><input name="Final" type="checkbox"></li>
+								<li><label>Final</label>
+								<input name="Final" type="checkbox"></li>
 
-								<li><label>Foundation</label><input name="Foundation" type="checkbox"></li>
+								<li><label>Foundation</label>
+								<input name="Foundation" type="checkbox"></li>
 
-								<li><label>Building</label><input name="Building" type="checkbox"></li>
+								<li><label>Building</label>
+								<input name="Building" type="checkbox"></li>
 
-								<li><label>Permit</label><input name="Permit" type="checkbox"></li>
+								<li><label>Permit</label>
+								<input name="Permit" type="checkbox"></li>
 
-								<li><label>Elevation Certificate</label><input name="Elevation" type="checkbox"></li>
+								<li><label>Elevation Certificate</label>
+								<input name="Elevation" type="checkbox"></li>
 
-								<li><label>Other:</label><input name="other" placeholder="Please Specify" type="text"></li>
+								<li><label>Other:</label>
+								<input name="other" placeholder="Please Specify" type="text"></li>
 							</ul>
 						</fieldset>
 					</div>
-
+						</div>
 					<div class="row">
 						<div class="medium-10 small-12 small-centered columns">
-							<h3>Details</h3>
+						<h3>Details</h3>
 
 						
 						<div class="medium-4 columns">
 							<fieldset>
 								<legend>Client</legend> 
-								<label>Name</label> <input name="Client Name" type="text"> <label>Billing Address</label> <input name="Billing Address" type="text"> 
-								<label>Phone</label> <input name="Phone" type="tel"> 
-								<label>Fax</label> <input name="Fax" type="tel">
+								<label>Name</label> 
+								<input name="Client Name" type="text"> 
+								<label>Billing Address</label> 
+								<input name="Billing Address" type="text"> 
+								<label>Phone</label> 
+								<input name="Phone" type="tel"> 
+								<label>Fax</label> 
+								<input name="Fax" type="tel">
 							</fieldset>
 						</div>
+
 						<div class="medium-4 columns">
 							<fieldset>
 								<legend>Realtor</legend> 
-								<label>Name</label> <input name="Realtor Name" type="text"> 
-								<label>Phone</label> <input name="Realtor Phone" type="tel">  
-								<label>Closing Date</label> <input name="Closing Date" type="date"> 
-								<label>Closing Agent</label> <input name="Closing Agent" type="text">
+								<label>Name</label> 
+								<input name="Realtor Name" type="text"> 
+								<label>Phone</label> 
+								<input name="Realtor Phone" type="tel">  
+								<label>Closing Date</label> 
+								<input name="Closing Date" type="date"> 
+								<label>Closing Agent</label> 
+								<input name="Closing Agent" type="text">
 							</fieldset>
 						</div>
 			
-
 						<div class="medium-4 columns">
-								<fieldset>
+							<fieldset>
 								<legend>Additional Details</legend>
-								<label>Title Company</label> <input name="Title Company" type="text"> <label>Tax Parcel #</label> <input name="Tax Parcel Number" type="number"> <label>Section</label> <input maxlength="3" name="Section" type="text"> <label>Township</label> <input maxlength="3" name="Township" type="text">
-									<label>Range:</label> <input name="Range" type="text"maxlength="3">
-									</fieldset>
-								</div>
+								<label>Title Company</label> 
+								<input name="Title Company" type="text"> 
+								<label>Tax Parcel #</label> 
+								<input name="Tax Parcel Number" type="number"> 
+								<label>Section</label> 
+								<input maxlength="3" name="Section" type="text"> 
+								<label>Township</label> 
+								<input maxlength="3" name="Township" type="text">
+								<label>Range:</label> 
+								<input name="Range" type="text"maxlength="3">
+							</fieldset>
+						</div>
 
-
-						
 					</div><!--End Row -->
 					<div class="large-12 columns text-center">
-					<p>Please fax or email us a copy of your legal description.</p>
+						<p>Please fax or email us a copy of your legal description.</p>
 					</div>
-									</form>
+				</form>
 			</div><!--End Row -->
 		</div><!-- End Panel -->
 
 		<div class="large-12 columns text-center">
-			<input class="cta button" type="submit" value="Submit">
+			<input type="submit" value="Submit"/>
 		</div>
 	</section>
 	<hr>
