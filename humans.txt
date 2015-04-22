@@ -1,3 +1,5 @@
+/* Assembled with love by Dustin Aguilar with help from Zurb Foundation for stability. */
+
 /* Foundation was made by ZURB, an interaction design and design strategy firm in Campbell, CA */
 /* zurb.com */
 /* humanstxt.org */

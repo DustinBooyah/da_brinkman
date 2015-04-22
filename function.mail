@@ -11,11 +11,10 @@
 
 ###################### Set up the following variables ###################### 
 # 
-$to = "dustinaguilar@outlook.com"; #set address to send form to 
-$subject = "Survey Request"; #set the subject line 
-$headers = "Survey Request"; #set the from address, or any other headers 
+$to = "admin@brinkmansurveying.com"; #set address to send form to 
+$subject = "Survey Estimate Request"; #set the subject line 
 $forward = 1; # redirect? 1 : yes || 0 : no 
-$location = "thanks.htm"; #set page to redirect to, if 1 is above 
+$location = "thanks.html"; #set page to redirect to, if 1 is above 
 # 
 ##################### No need to edit below this line ###################### 
 
