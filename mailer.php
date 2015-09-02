@@ -43,7 +43,7 @@ if ($forward == 1) {
     header ("Location:$location"); 
 } 
 else { 
-    echo "Thank you for submitting our form. We will get back to you as soon as possible."; 
+    echo "Thank you!. We'll get back to you as soon as possible."; 
 } 
 
 ?>
