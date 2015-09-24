@@ -1371,12 +1371,12 @@ td {
 
 /* Default Link Styles */
 a {
-  color: #FF5F25;
+  color: #06ABF8;
   text-decoration: none;
   line-height: inherit;
    }
   a:hover, a:focus {
-    color: #C83500;
+    color: #008CCE;
   }
   a img {
     border: none; }
@@ -1402,8 +1402,7 @@ p {
 /* Default header styles */
 h1, h2 {
   font-style: normal;
-  letter-spacing:-0.15rem;
-  font-weight: 700;
+  letter-spacing:-0.2rem;
   color: #1D587C;
   text-rendering: optimizeLegibility;
   margin-top: 0.2rem;
@@ -1411,10 +1410,9 @@ h1, h2 {
   line-height: 1.4;
   }
 
-  h4, h5, h6 {
+  h3, h4, h5, h6 {
   font-style: normal;
-  letter-spacing: -0.1rem;
-  font-weight:400;
+  letter-spacing: -0.08rem;
   color: #888;
   text-rendering: optimizeLegibility;
   margin-top: 0.2rem;
@@ -1425,8 +1423,9 @@ h1, h2 {
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
     font-size: 70%;
     color: #888;
-    line-height: 0;
-    font-weight:400; }
+    line-height: 1;
+    font-weight:400;
+    letter-spacing:-0.07rem; }
 
 h1 {
   font-size:2rem;
@@ -1435,19 +1434,11 @@ h1 {
 
 h2 {
   font-size: 1.6875rem;
-  ;
+  
 }
 
 h3 {
   font-size: 1.375rem;
-  font-style: normal;
-  letter-spacing:-0.1rem;
-  font-weight: 700;
-  color: #1D587C;
-  text-rendering: optimizeLegibility;
-  margin-top: 0.2rem;
-  margin-bottom: 0.5rem;
-  line-height: 1.4;
  }
 
 h4 {
@@ -1852,11 +1843,12 @@ button, .button {
   cursor: pointer;
   /*font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;*/
   font-weight: 700;
-  line-height: normal;
+  line-height: 1;
   margin: 0 0 1.25rem;
   position: relative;
   text-decoration: none;
   text-align: center;
+  letter-spacing:-0.07rem;
   -webkit-appearance: none;
   -moz-appearance: none;
   border-radius: 0;
@@ -1873,7 +1865,7 @@ button, .button {
   box-shadow:#444 2px 2px 3px;
   transition: background-color 300ms ease-out; }
   button:hover, button:focus, .button:hover, .button:focus {
-    background-color: #9ACF02; }
+    background-color: #79CC00 ; }
   button:hover, button:focus, .button:hover, .button:focus {
     color: #FFFFFF; }
   button.secondary, .button.secondary {

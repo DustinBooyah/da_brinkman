@@ -11,7 +11,7 @@
 
 ###################### Set up the following variables ###################### 
 # 
-$to = "admin@brinkmansurveying.com"; #set address to send form to 
+$to = "kim.brinkman@att.net"; #set address to send form to 
 $subject = "Survey Estimate Request"; #set the subject line 
 $forward = 1; # redirect? 1 : yes || 0 : no 
 $location = "thanks.html"; #set page to redirect to, if 1 is above 
@@ -25,7 +25,7 @@ $time = date ("h:i A");
 
 ## mail the message ## 
 
-$msg = "Below is the result of your feedback form. It was submitted on $date at $time.\n\n"; 
+$msg = "On $date at $timehe, the following Survey Estimate Request was submitted via the Brinkman Surveying website.\n\n"; 
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	foreach ($_POST as $key => $value) { 

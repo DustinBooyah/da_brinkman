@@ -1,0 +1,20 @@
+Internet Explorer users, if you see this message, please use the guide below:
+
+
+1. Open Internet Explorer
+
+2. In the address bar, type the server you're attempting to connect to starting with ftp:// 
+   Example: ftp://my-ftp-site.com
+
+3. Internet Explorer will display a list of files and folders from the FTP domain for download only.
+
+4. To quickly save a file locally, right-click the file and select "Save Target As..." and choose
+   a location on your computer you can find easily after the download completes.
+
+5. To add or remove files from the site, click the 'Page' menu button on the right-hand side 
+   of the Internet Explorer browser window and select the option, "Open FTP Site in Windows Explorer" 
+   towards the bottom of the menu. You may have to login again.
+
+6. You can now drag-n-drop the files from the FTP server to your computer and vice versa with more ease.
+
+7. If you need continued assistance, please contact your technical support or provider of the FTP site.
