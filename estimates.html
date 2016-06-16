@@ -71,8 +71,8 @@
 						<div class="row">
 						
 							<div class="medium-4 columns">
-								<label>Begin on the following date</label> 
-								<input name="Date" type="date"/>
+								<label for="date_begin">Begin on the following date</label> 
+								<input name="date_begin" type="date"/>
 							</div>
 							
 							<div class="medium-5 columns">
@@ -117,7 +117,7 @@
 								<input name="Elevation Certificate" type="checkbox"/></li>
 
 								<li><label>Other:</label>
-								<input name="other" placeholder="Please Specify" type="text"/></li>
+								<input name="other_survey_type" placeholder="Please Specify" type="text"/></li>
 							</ul>
 						</fieldset>
 					</div>
@@ -131,15 +131,15 @@
 							<fieldset>
 								<legend>Client</legend> 
 								<label>Name</label> 
-								<input name="Client Name" type="text"/> 
+								<input name="client_name" type="text"/> 
 								<label>Email</label> 
-								<input name="Email" type="email"/> 
+								<input name="client_email" type="email"/> 
 								<label>Billing Address</label> 
-								<input name="Billing Address" type="text"/> 
+								<input name="billing_address" type="text"/> 
 								<label>Phone</label> 
-								<input name="Phone" type="tel"/> 
+								<input name="client_phone" type="tel"/> 
 								<label>Fax</label> 
-								<input name="Fax" type="tel"/>
+								<input name="client_fax" type="tel"/>
 							</fieldset>
 						</div>
 
@@ -147,15 +147,15 @@
 							<fieldset>
 								<legend>Realtor</legend> 
 								<label>Name</label> 
-								<input name="Realtor Name" type="text"/> 
+								<input name="realtor_name" type="text"/> 
 								<label>Email</label> 
-								<input name="Email" type="email"/> 
+								<input name="realtor_email" type="email"/> 
 								<label>Phone</label> 
-								<input name="Realtor Phone" type="tel"/>  
+								<input name="realtor_phone" type="tel"/>  
 								<label>Closing Date</label> 
-								<input name="Closing Date" type="date"/> 
+								<input name="closing_date" type="date"/> 
 								<label>Closing Agent</label> 
-								<input name="Closing Agent" type="text"/>
+								<input name="closing_agent" type="text"/>
 							</fieldset>
 						</div>
 			
@@ -163,11 +163,11 @@
 							<fieldset>
 								<legend>Additional Details</legend>
 								<label>Title Company</label> 
-								<input name="Title Company" type="text"/> 
+								<input name="title_company" type="text"/> 
 								<label>Tax Parcel #</label> 
-								<input name="Tax Parcel Number" type="number"/> 
+								<input name="tax_parcel_number" type="number"/> 
 								<label>Section</label> 
-								<input maxlength="3" name="Section" type="text"/> 
+								<input maxlength="3" name="section" type="text"/> 
 								<!-- <label>Township</label> 
 								<input maxlength="3" name="Township" type="text"/>
 								<label>Range:</label> 

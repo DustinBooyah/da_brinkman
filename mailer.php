@@ -11,16 +11,19 @@
 
 ###################### Set up the following variables ###################### 
 # 
-$to = "eightball007@hotmail.com"; #set address to send form to 
+$to = "kim.brinkman@att.net"; #set address to send form to 
 $subject = "Survey Estimate Request"; #set the subject line 
 $forward = 1; # redirect? 1 : yes || 0 : no 
-$location = "thanks.html"; #set page to redirect to, if 1 is above 
+$location = "thanks.html"; #set page to redirect to, if 1 is above \
+$name = $_POST['Client_Name'];
+$email = $_POST['client_email'];
+$headers .= "From: ".$name." <".$email.">";
 # 
 ##################### No need to edit below this line ###################### 
 
 ## set up the time ## 
 
-$date = date ("l, F jS, Y"); 
+$date = $_POST['begin_date']; 
 $time = date ("h:i A"); 
 
 ## mail the message ## 
