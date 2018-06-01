@@ -11,9 +11,9 @@
 
 ###################### Set up the following variables ###################### 
 # 
-$to = "kim.brinkman@att.net"; //set address to send form to
+$to = "eightball007@hotmail.com"; //set address to send form to
 $subject = "Survey Estimate Request"; //set the subject line
-$from = $_POST['client_email']; // this is the sender's Email address
+$from = $_POST['webform@brinkmansurveying.com']; // this is the sender's Email address
 $name = $_POST['client_name']; 
 $forward = 1; // redirect? 1 : yes || 0 : no 
 $location = "thanks.html"; //set page to redirect to, if 1 is above
