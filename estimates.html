@@ -14,18 +14,17 @@
 /*<![CDATA[*/@import 'css/style.css';/*]]>*/
 	</style>
 </head>
-
 <body>
 	<header>
         <nav>
             <div class="row medium-uncollapse large-collapse">
 
                 <div class="medium-6 columns hide-for-small">
-                    <a href="index.html"><img src="img/logo2.svg"></a>
+                    <a href="index.html"><img src="img/logo2.svg" title="Brinkman Surveying" alt="Logo for Brinkman Surveying"></a>
                 </div>
 
                 <div class="medium-6 columns text-center hide-for-medium-up">
-                    <img src="img/logo_sm.svg" style="opacity:0.25;margin-bottom:-20px;margin-top:0;">
+                    <img src="img/logo_sm.svg" style="opacity:0.25;margin-bottom:-20px;margin-top:0;" title="Brinkman Surveying" alt="Logo for Brinkman Surveying">
                 </div>
 
                 <div class="medium-6 columns">
@@ -35,7 +34,7 @@
                       <a href="estimates.html">Estimates</a>
                       <a href="contact.html">Contact</a>
                     </div>
-            
+
                     <div class="icon-bar four-up hide-for-large-up">
                       <a class="item" href="index.html">
                         <i class="fi-home"></i>
@@ -64,29 +63,30 @@
 
 		<div class="row">
 			<div class="panel">
-				<form id="estimate" name="estimate" action="mailer.php" method="post" onsubmit="return validate.check(this)">
+				<!-- <form id="estimate" name="estimate" action="mailer.php" method="post" onsubmit="return validate.check(this)"> -->
+				<form action="https://formsubmit.co/jim@brinkmansurveying.com" class="text3" method="post">
 					<div class="medium-10 small-12 small-centered columns">
 						<h3>Basic Information</h3>
 
 						<div class="row">
-						
+
 							<div class="medium-4 columns">
-								<label for="date_begin">Begin on the following date</label> 
-								<input name="date_begin" type="date"/>
+								<label for="date_begin">Begin on the following date</label>
+								<input name="Date" type="date"/>
 							</div>
-							
+
 							<div class="medium-5 columns">
-								<label>Project Address</label> 
+								<label>Project Address</label>
 								<input name="Project Address" type="text"/>
 							</div>
 
 							<div class="medium-3 columns">
-								<label>How Many Acres:</label> 
+								<label>How Many Acres:</label>
 								<input name="Acres" type="number"/>
 							</div>
 						</div>
 					</div>
-			
+
 					<div class="medium-10 small-12 small-centered columns">
 						<fieldset>
 							<legend>Select the Survey(s) you need.</legend>
@@ -117,7 +117,7 @@
 								<input name="Elevation Certificate" type="checkbox"/></li>
 
 								<li><label>Other:</label>
-								<input name="other_survey_type" placeholder="Please Specify" type="text"/></li>
+								<input name="Other Survey Type" placeholder="Please Specify" type="text"/></li>
 							</ul>
 						</fieldset>
 					</div>
@@ -129,48 +129,48 @@
 
 						<div class="medium-4 columns">
 							<fieldset>
-								<legend>Client</legend> 
-								<label>Name</label> 
-								<input name="client_name" type="text"/> 
-								<label>Email</label> 
-								<input name="client_email" type="email"/> 
-								<label>Billing Address</label> 
-								<input name="billing_address" type="text"/> 
-								<label>Phone</label> 
-								<input name="client_phone" type="tel"/> 
-								<label>Fax</label> 
-								<input name="client_fax" type="tel"/>
+								<legend>Client</legend>
+								<label>Name</label>
+								<input name="Client Name" type="text"/>
+								<label>Email</label>
+								<input name="Client Email" type="email"/>
+								<label>Billing Address</label>
+								<input name="Billing Address" type="text"/>
+								<label>Phone</label>
+								<input name="Phone" type="tel"/>
+								<label>Fax</label>
+								<input name="Fax" type="tel"/>
 							</fieldset>
 						</div>
 
 						<div class="medium-4 columns">
 							<fieldset>
-								<legend>Realtor</legend> 
-								<label>Name</label> 
-								<input name="realtor_name" type="text"/> 
-								<label>Email</label> 
-								<input name="realtor_email" type="email"/> 
-								<label>Phone</label> 
-								<input name="realtor_phone" type="tel"/>  
-								<label>Closing Date</label> 
-								<input name="closing_date" type="date"/> 
-								<label>Closing Agent</label> 
-								<input name="closing_agent" type="text"/>
+								<legend>Realtor</legend>
+								<label>Realtor Name</label>
+								<input name="Realtor Name" type="text">
+								<label>Realtor Phone</label>
+								<input name="Realtor Phone" type="tel">
+								<label>Realtor Email</label>
+								<input name="Realtor Email" type="email">
+								<label>Closing Date</label>
+								<input name="Closing Date" type="date">
+								<label>Closing Agent</label>
+								<input name="Closing Agent" type="text">
 							</fieldset>
 						</div>
-			
+
 						<div class="medium-4 columns">
 							<fieldset>
 								<legend>Additional Details</legend>
-								<label>Title Company</label> 
-								<input name="title_company" type="text"/> 
-								<label>Tax Parcel #</label> 
-								<input name="tax_parcel_number" type="number"/> 
-								<label>Section</label> 
-								<input maxlength="3" name="section" type="text"/> 
-								<!-- <label>Township</label> 
+								<label>Title Company</label>
+								<input name="Title Company" type="text">
+								<label>Tax Parcel #</label>
+								<input name="Tax Parcel Number" type="number">
+								<label>Section</label>
+								<input maxlength="3" name="Section" type="text">
+								<!-- <label>Township</label>
 								<input maxlength="3" name="Township" type="text"/>
-								<label>Range:</label> 
+								<label>Range:</label>
 								<input name="Range" type="text"maxlength="3"/> -->
 							</fieldset>
 						</div>
@@ -180,8 +180,14 @@
 						<p>Please fax or email us a copy of your legal description.</p>
 					</div>
 
-					<div class="large-12 columns text-center">
+					<!-- <div class="large-12 columns text-center">
 						<input class="button cta"type="submit" value="Submit"/>
+					</div> -->
+					<div class="large-12 columns text-center">
+						<!-- <button class="cta button g-recaptcha" data-sitekey="6LfMuNYmAAAAAHUrRJ4doVvY2O0oGYNPAUMl1FL8" type="submit" value="Submit">Send</button> <input name="_next" type="hidden" value="thanks.html"> -->
+						<button class="cta button" type="submit" value="Submit">Send</button> <input name="_next" type="hidden" value="https://brinkmansurveying.com/thanks.html">
+						<!-- <button class="cta button" type="submit" value="Submit">Send</button> <input name="_next" type="hidden" value="https://dustinaguilar.com/brinkman/thanks.html"> -->
+
 					</div>
 				</form>
 			</div><!--End Row -->
@@ -196,17 +202,21 @@
               <h3><small>Phone </small><a href="tel:1-352-374-7707"> (352) 374-7707</a> <small> Fax </small><a href="tel:1-352-374-8757"> (352) 374-8757</a></h3>
             </div>
             <div class="large-6 columns text-center">
-                <strong><small>©2019 Brinkman Surveying and Mapping, Inc.</small></strong>
+                <strong><small>©2023 Brinkman Surveying and Mapping, Inc.</small></strong>
             </div>
             <div class="large-12 columns text-center">
-            <a href="http://www.dustinaguilar.com"><img src="img/logo_f.png"></a>
+            <a href="https://www.dustinaguilar.com"><img src="img/logo_f.png" title="Dustin Aguilar" alt="Logo for Dustin Aguilar"></a>
             </div>
         </div>
-    </footer><script src="js/vendor/jquery.js"></script> <script src="js/foundation.min.js"></script> <script>
-$(document).foundation();
+    </footer>
+	<script src="js/vendor/jquery.js">
 	</script>
-	<script language="JavaScript">
+	<script src="js/foundation.min.js"></script>
+	<script>
+	$(document).foundation();
+	</script>
+	<!-- <script language="JavaScript">
 	$(document).getElementById("estimate").submit();
-	</script>
+	</script> -->
 </body>
 </html>
