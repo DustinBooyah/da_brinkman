@@ -15,6 +15,7 @@
 	</style>
 </head>
 <body>
+	<a href="#main-content" class="skip-link">Skip to main content</a>
 	<header>
         <nav>
             <div class="row medium-uncollapse large-collapse">
@@ -36,17 +37,17 @@
                     </div>
 
                     <div class="icon-bar four-up hide-for-large-up">
-                      <a class="item" href="index.html">
-                        <i class="fi-home"></i>
+                      <a class="item" href="index.html" aria-label="Home">
+                        <i class="fi-home" aria-hidden="true"></i>
                       </a>
-                      <a class="item" href="services.html">
-                        <i class="fi-info"></i>
+                      <a class="item" href="services.html" aria-label="Services">
+                        <i class="fi-info" aria-hidden="true"></i>
                       </a>
-                      <a class="item" href="estimates.html">
-                        <i class="fi-clipboard"></i>
+                      <a class="item" href="estimates.html" aria-label="Estimates">
+                        <i class="fi-clipboard" aria-hidden="true"></i>
                       </a>
-                      <a class="item" href="contact.html">
-                        <i class="fi-mail"></i>
+                      <a class="item" href="contact.html" aria-label="Contact">
+                        <i class="fi-mail" aria-hidden="true"></i>
                       </a>
                     </div>
                 </div>
@@ -54,6 +55,7 @@
         </nav>
     </header>
 
+	<main id="main-content">
 	<section>
 		<div class="estimate">
 			<div class="row">
@@ -66,23 +68,23 @@
 				<!-- <form id="estimate" name="estimate" action="mailer.php" method="post" onsubmit="return validate.check(this)"> -->
 				<form action="https://formsubmit.co/jim@brinkmansurveying.com" class="text3" method="post">
 					<div class="medium-10 small-12 small-centered columns">
-						<h3>Basic Information</h3>
+						<h2>Basic Information</h2>
 
 						<div class="row">
 
 							<div class="medium-4 columns">
 								<label for="date_begin">Begin on the following date</label>
-								<input name="Date" type="date"/>
+								<input id="date_begin" name="Date" type="date"/>
 							</div>
 
 							<div class="medium-5 columns">
-								<label>Project Address</label>
-								<input name="Project Address" type="text"/>
+								<label for="project_address">Project Address</label>
+								<input id="project_address" name="Project Address" type="text"/>
 							</div>
 
 							<div class="medium-3 columns">
-								<label>How Many Acres:</label>
-								<input name="Acres" type="number"/>
+								<label for="acres">How Many Acres:</label>
+								<input id="acres" name="Acres" type="number"/>
 							</div>
 						</div>
 					</div>
@@ -92,32 +94,32 @@
 							<legend>Select the Survey(s) you need.</legend>
 							<ul class="inline-list no-bullet">
 
-								<li><label>ALTA Survey</label>
-								<input name="ALTA Survey" type="checkbox"/></li>
+								<li><label for="alta_survey">ALTA Survey</label>
+								<input id="alta_survey" name="ALTA Survey" type="checkbox"/></li>
 
-								<li><label>Boundary Survey</label>
-								<input name="Boundary Survey" type="checkbox"/></li>
+								<li><label for="boundary_survey">Boundary Survey</label>
+								<input id="boundary_survey" name="Boundary Survey" type="checkbox"/></li>
 
-								<li><label>Foundation Survey</label>
-								<input name="Foundation Survey" type="checkbox"/></li>
+								<li><label for="foundation_survey">Foundation Survey</label>
+								<input id="foundation_survey" name="Foundation Survey" type="checkbox"/></li>
 
-								<li><label>Final Survey</label>
-								<input name="Final Survey" type="checkbox"/></li>
+								<li><label for="final_survey">Final Survey</label>
+								<input id="final_survey" name="Final Survey" type="checkbox"/></li>
 
-								<li><label>Construction Staking</label>
-								<input name="Construction Staking" type="checkbox"/></li>
+								<li><label for="construction_staking">Construction Staking</label>
+								<input id="construction_staking" name="Construction Staking" type="checkbox"/></li>
 
-								<li><label>Topographic Survey</label>
-								<input name="Building Survey" type="checkbox"/></li>
+								<li><label for="topographic_survey">Topographic Survey</label>
+								<input id="topographic_survey" name="Building Survey" type="checkbox"/></li>
 
 								<!-- <li><label>Permit</label>
 								<input name="Permit" type="checkbox"/></li> -->
 
-								<li><label>Elevation Certificate</label>
-								<input name="Elevation Certificate" type="checkbox"/></li>
+								<li><label for="elevation_cert">Elevation Certificate</label>
+								<input id="elevation_cert" name="Elevation Certificate" type="checkbox"/></li>
 
-								<li><label>Other:</label>
-								<input name="Other Survey Type" placeholder="Please Specify" type="text"/></li>
+								<li><label for="other_survey">Other:</label>
+								<input id="other_survey" name="Other Survey Type" placeholder="Please Specify" type="text"/></li>
 							</ul>
 						</fieldset>
 					</div>
@@ -125,49 +127,49 @@
 
 				<div class="row">
 					<div class="medium-10 small-12 small-centered columns">
-						<h3>Details</h3>
+						<h2>Details</h2>
 
 						<div class="medium-4 columns">
 							<fieldset>
 								<legend>Client</legend>
-								<label>Name</label>
-								<input name="Client Name" type="text"/>
-								<label>Email</label>
-								<input name="Client Email" type="email"/>
-								<label>Billing Address</label>
-								<input name="Billing Address" type="text"/>
-								<label>Phone</label>
-								<input name="Phone" type="tel"/>
-								<label>Fax</label>
-								<input name="Fax" type="tel"/>
+								<label for="client_name">Name</label>
+								<input id="client_name" name="Client Name" type="text"/>
+								<label for="client_email">Email</label>
+								<input id="client_email" name="Client Email" type="email"/>
+								<label for="billing_address">Billing Address</label>
+								<input id="billing_address" name="Billing Address" type="text"/>
+								<label for="client_phone">Phone</label>
+								<input id="client_phone" name="Phone" type="tel"/>
+								<label for="client_fax">Fax</label>
+								<input id="client_fax" name="Fax" type="tel"/>
 							</fieldset>
 						</div>
 
 						<div class="medium-4 columns">
 							<fieldset>
 								<legend>Realtor</legend>
-								<label>Realtor Name</label>
-								<input name="Realtor Name" type="text">
-								<label>Realtor Phone</label>
-								<input name="Realtor Phone" type="tel">
-								<label>Realtor Email</label>
-								<input name="Realtor Email" type="email">
-								<label>Closing Date</label>
-								<input name="Closing Date" type="date">
-								<label>Closing Agent</label>
-								<input name="Closing Agent" type="text">
+								<label for="realtor_name">Realtor Name</label>
+								<input id="realtor_name" name="Realtor Name" type="text">
+								<label for="realtor_phone">Realtor Phone</label>
+								<input id="realtor_phone" name="Realtor Phone" type="tel">
+								<label for="realtor_email">Realtor Email</label>
+								<input id="realtor_email" name="Realtor Email" type="email">
+								<label for="closing_date">Closing Date</label>
+								<input id="closing_date" name="Closing Date" type="date">
+								<label for="closing_agent">Closing Agent</label>
+								<input id="closing_agent" name="Closing Agent" type="text">
 							</fieldset>
 						</div>
 
 						<div class="medium-4 columns">
 							<fieldset>
 								<legend>Additional Details</legend>
-								<label>Title Company</label>
-								<input name="Title Company" type="text">
-								<label>Tax Parcel #</label>
-								<input name="Tax Parcel Number" type="number">
-								<label>Section</label>
-								<input maxlength="3" name="Section" type="text">
+								<label for="title_company">Title Company</label>
+								<input id="title_company" name="Title Company" type="text">
+								<label for="tax_parcel">Tax Parcel #</label>
+								<input id="tax_parcel" name="Tax Parcel Number" type="number">
+								<label for="section">Section</label>
+								<input id="section" maxlength="3" name="Section" type="text">
 								<!-- <label>Township</label>
 								<input maxlength="3" name="Township" type="text"/>
 								<label>Range:</label>
@@ -194,18 +196,19 @@
 		</div><!-- End Panel -->
 
 	</section>
+	</main>
 	<hr>
 
 	    <footer>
         <div class="row">
             <div class="large-6 columns text-center">
-              <h3><small>Phone </small><a href="tel:1-352-374-7707"> (352) 374-7707</a> <small> Fax </small><a href="tel:1-352-374-8757"> (352) 374-8757</a></h3>
+              <p class="h3"><small>Phone </small><a href="tel:1-352-374-7707"> (352) 374-7707</a> <small> Fax </small><a href="tel:1-352-374-8757"> (352) 374-8757</a></p>
             </div>
             <div class="large-6 columns text-center">
-                <strong><small>©2023 Brinkman Surveying and Mapping, Inc.</small></strong>
+                <strong><small>©2026 Brinkman Surveying and Mapping, Inc.</small></strong>
             </div>
             <div class="large-12 columns text-center">
-            <a href="https://www.dustinaguilar.com"><img src="img/logo_f.png" title="Dustin Aguilar" alt="Logo for Dustin Aguilar"></a>
+            <a href="https://www.dustinaguilar.com"><img src="img/logo_f.png" title="Dustin Aguilar" alt="Website by Dustin Aguilar"></a>
             </div>
         </div>
     </footer>

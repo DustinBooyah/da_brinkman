@@ -1,5 +1,30 @@
 ﻿@charset "utf-8";
 
+/* Accessibility: Skip to main content link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #dd4512;
+  color: #fff;
+  padding: 8px 16px;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: bold;
+}
+.skip-link:focus {
+  top: 0;
+}
+a {
+  color:#1d587c;
+  /* color:#008CCE; */
+}
+a:hover {
+  color:#008CCE;
+}
+a.lightlink {
+	color:#FF5D12;
+}
 section {
 min-height: 75vh;
 margin-bottom:0;
@@ -26,7 +51,7 @@ color:#888;
 }
 
 .icon-bar a:active {
-color:#eee;
+color:#FF5D12;
 background:none;
 }
 
@@ -44,21 +69,21 @@ background:none;
 }
 .icon-bar a:hover:after {
   width: 100%;
-  left: 0;
+  left: 0
 }
 .orange {
-	color:#FF5D12;
+	color:#dd4512;
 }
 .orange-shadow {
   color:#FF5D12;
   text-shadow:1px 1px 1px rgba(0,0,0,0.75);
 }
 .text-white {
-color:#F4F4F4;
+color:#F4F4F4 !important;
 text-shadow:1px 1px 1px rgba(0,0,0,0.75);
 }
 .text-offwhite {
-  color:#ccc;
+  color:#ccc ;
   text-shadow:1px 1px 1px rgba(0,0,0,0.75);
 }
 .text-grey {
@@ -74,7 +99,7 @@ text-shadow:1px 1px 1px rgba(0,0,0,0.75);
   text-shadow:2px 2px 2px rgba(0,0,0,0.75);
 
 }
-.main h2, .main h4 {
+.main-heading {
   color:#fefefe;
   line-height:1;
   text-shadow:1px 1px 2px rgba(0,0,0,1);
@@ -86,6 +111,7 @@ text-shadow:1px 1px 1px rgba(0,0,0,0.75);
 }
 
 .main {
+  height:85vh;
   background-color:#f3f3f3;
   background-image:url(../img/bg_main.png);
   background-position:bottom center;
@@ -162,3 +188,67 @@ letter-spacing: -0.5rem;
 }
 
   }
+
+/* Accessibility: Focus indicators for keyboard navigation */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #dd4512;
+  outline-offset: 2px;
+}
+
+/* Enhanced focus for navigation links */
+.icon-bar a:focus {
+  outline: 2px solid #dd4512;
+  outline-offset: 2px;
+}
+
+.icon-bar a:focus:after {
+  width: 100%;
+  left: 0;
+}
+
+/* Focus style for CTA buttons */
+.cta:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px #68B000;
+}
+
+/* Focus-visible for modern browsers (only show on keyboard nav) */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #dd4512;
+  outline-offset: 2px;
+}
+
+footer {
+  /* background:white; */
+  /* position:sticky;
+  bottom:0; */
+  width:100%;
+margin-top:2em;
+}
+
+/* Accessibility: Heading-style classes for semantic flexibility */
+/* .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #222222;
+  text-rendering: optimizeLegibility;
+  margin-top: 0.2rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+.h1 { font-size: 2.75rem; }
+.h2 { font-size: 2.3125rem; }
+.h3 { font-size: 1.6875rem; }
+.h4 { font-size: 1.4375rem; }
+.h5 { font-size: 1.125rem; }
+.h6 { font-size: 1rem; } */
