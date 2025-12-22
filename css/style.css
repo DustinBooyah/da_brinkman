@@ -16,43 +16,44 @@
   top: 0;
 }
 a {
-  color:#1d587c;
+  color: #1d587c;
   /* color:#008CCE; */
 }
 a:hover {
-  color:#008CCE;
+  color: #008cce;
 }
 a.lightlink {
-	color:#FF5D12;
+  color: #ff5d12;
 }
 section {
-min-height: 75vh;
-margin-bottom:0;
+  min-height: 75vh;
+  margin-bottom: 0;
 }
 
 nav {
-background: #fefefe;
-box-shadow: 0 0 2px #444;
-min-height: 50px;
-width: 100%;
-overflow:visible;
-padding:0;
+  background: #fefefe;
+  box-shadow: 0 0 2px #444;
+  min-height: 50px;
+  width: 100%;
+  overflow: visible;
+  padding: 0;
 }
 
 .icon-bar a {
-  position:relative;
+  position: relative;
 }
 
-.icon-bar a:link, nav a:visited{
-color:#252525;
+.icon-bar a:link,
+nav a:visited {
+  color: #252525;
 }
-.icon-bar a:hover{
-color:#888;
+.icon-bar a:hover {
+  color: #666
 }
 
 .icon-bar a:active {
-color:#FF5D12;
-background:none;
+  color: #ff5d12;
+  background: none;
 }
 
 .icon-bar a:after {
@@ -69,125 +70,122 @@ background:none;
 }
 .icon-bar a:hover:after {
   width: 100%;
-  left: 0
+  left: 0;
 }
 .orange {
-	color:#dd4512;
+  color: #dd4512;
 }
 .orange-shadow {
-  color:#FF5D12;
-  text-shadow:1px 1px 1px rgba(0,0,0,0.75);
+  color: #ff5d12;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
 }
 .text-white {
-color:#F4F4F4 !important;
-text-shadow:1px 1px 1px rgba(0,0,0,0.75);
+  color: #f4f4f4 !important;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
 }
 .text-offwhite {
-  color:#ccc ;
-  text-shadow:1px 1px 1px rgba(0,0,0,0.75);
+  color: #ccc;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
 }
 .text-grey {
-  color:#444 !important;
+  color: #444 !important;
 }
 .main-padding {
-  padding-top:3rem ;
-  padding-bottom:3rem ;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .main h1 {
-  color:#fefefe;
-  line-height:1;
-  text-shadow:2px 2px 2px rgba(0,0,0,0.75);
-
+  color: #fefefe;
+  line-height: 1;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
 }
 .main-heading {
-  color:#fefefe;
-  line-height:1;
-  text-shadow:1px 1px 2px rgba(0,0,0,1);
+  color: #fefefe;
+  line-height: 1;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
 }
 
 .hr-orange {
-  border:solid 1px #FF5D12;
-  margin:0.25rem;
+  border: solid 1px #ff5d12;
+  margin: 0.25rem;
 }
 
 .main {
-  height:85vh;
-  background-color:#f3f3f3;
-  background-image:url(../img/bg_main.png);
-  background-position:bottom center;
-  background-repeat:no-repeat;
-  background-size:cover;
+  height: 85vh;
+  background-color: #f3f3f3;
+  background-image: url(../img/bg_main.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.services{
-  background-image:url(../img/services.png);
-  background-position:top center;
-  background-repeat:no-repeat;
-  background-size:cover;
-  max-height:15rem;
-  margin-bottom:-10px;
-  }
+.services {
+  background-image: url(../img/services.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 15rem;
+  margin-bottom: -10px;
+}
 .estimate {
-	background-image:url(../img/estimate.png);
-  background-position:top center;
-  background-repeat:no-repeat;
-  background-size:cover;
-  max-height:15rem;
-  margin-bottom:-10px;
+  background-image: url(../img/estimate.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 15rem;
+  margin-bottom: -10px;
 }
 
 .contact {
-  background-image:url(../img/contact.png);
-  background-position:top center;
-  background-repeat:no-repeat;
-  background-size:cover;
-  max-height:15rem;
-  margin-bottom:-10px;
+  background-image: url(../img/contact.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 15rem;
+  margin-bottom: -10px;
 }
-.cta{
-background:#68B000 ;
+.cta {
+  background: #5fa100;
 }
-
 
 a.cta,
 a.cta :link,
-a.cta :visited
- {
-font-size:150%;
-font-weight:700;
-color:#fff;
+a.cta :visited {
+  font-size: 150%;
+  font-weight: 700;
+  color: #fff;
 }
 .servimg {
-background:#fff;
-max-width:175px;
-max-height:175px;
-height:auto;
-border:10px solid #dd4512;
-border-radius:50%;
-box-shadow:#111 0px 1px 4px;
+  background: #fff;
+  max-width: 175px;
+  max-height: 175px;
+  height: auto;
+  border: 10px solid #dd4512;
+  border-radius: 50%;
+  box-shadow: #111 0px 1px 4px;
 }
 
 .inside {
-color: rgba(251, 251, 251, 0.75);
-font-size: 2.5rem;
-line-height: 2;
-margin-bottom: 0;
-text-align:center;
+  color: rgba(125, 125, 125);
+  font-size: 2.5rem;
+  line-height: 2;
+  margin-bottom: 0;
+  text-align: center;
+  mix-blend-mode: plus-lighter;
 }
 
 @media only screen and (min-width: 40.063em) {
-
-.inside {
-color: rgba(251, 251, 251, 0.5);
-font-size: 6rem;
-line-height: 1.2;
-margin-bottom: -15px;
-text-align:left;
-padding-top:1.25em;
-letter-spacing: -0.5rem;
-}
-
+  .inside {
+    color: rgba(125, 125, 125);
+    font-size: 6rem;
+    line-height: 1.2;
+    margin-bottom: -15px;
+    text-align: left;
+    padding-top: 1.25em;
+    letter-spacing: -0.5rem;
+    mix-blend-mode: plus-lighter;
   }
+}
 
 /* Accessibility: Focus indicators for keyboard navigation */
 a:focus,
@@ -214,7 +212,7 @@ textarea:focus {
 .cta:focus {
   outline: 2px solid #fff;
   outline-offset: 2px;
-  box-shadow: 0 0 0 4px #68B000;
+  box-shadow: 0 0 0 4px #5fa100;
 }
 
 /* Focus-visible for modern browsers (only show on keyboard nav) */
@@ -228,27 +226,18 @@ textarea:focus-visible {
 }
 
 footer {
-  /* background:white; */
-  /* position:sticky;
-  bottom:0; */
-  width:100%;
-margin-top:2em;
+  width: 100%;
+  margin-top: 2em;
 }
 
-/* Accessibility: Heading-style classes for semantic flexibility */
-/* .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  color: #222222;
-  text-rendering: optimizeLegibility;
-  margin-top: 0.2rem;
-  margin-bottom: 0.5rem;
-  line-height: 1.4;
+/* Accessibility: Reduced motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
-.h1 { font-size: 2.75rem; }
-.h2 { font-size: 2.3125rem; }
-.h3 { font-size: 1.6875rem; }
-.h4 { font-size: 1.4375rem; }
-.h5 { font-size: 1.125rem; }
-.h6 { font-size: 1rem; } */
