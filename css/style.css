@@ -458,3 +458,11 @@ label.required::after {
   }
 }
 
+.hide {
+  display:none;
+}
+.logo-style {
+  opacity: 0.25; 
+  margin-bottom: -20px; 
+  margin-top: 0
+}
