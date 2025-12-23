@@ -81,6 +81,7 @@ h6,
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
   line-height: 1.4;
+  /* font-weight:600; */
 }
 
 h1 small,
@@ -153,7 +154,7 @@ h6,
   .h1 {
     color: rgba(255, 255, 255, 0.75);
     font-size: 4rem;
-    letter-spacing: -0.35rem;
+    letter-spacing: -0.25rem;
   }
 
   h2,
@@ -164,6 +165,7 @@ h6,
   h3,
   .h3 {
     font-size: 1.6875rem;
+    font-weight: 600;
   }
 
   h4,
@@ -174,6 +176,7 @@ h6,
   h5,
   .h5 {
     font-size: 1.125rem;
+    font-weight: 600;
   }
 
   h6,
@@ -233,8 +236,16 @@ nav a:visited {
   color: #444 !important;
 }
 .main-padding {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.main {
+  height: 85vh;
+  background-color: #f3f3f3;
+  background-image: url(../img/bg_main.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .main h1 {
   color: #fefefe;
@@ -245,6 +256,7 @@ nav a:visited {
   color: #fefefe;
   line-height: 1;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+  font-weight:600;
 }
 
 .hr-orange {
@@ -252,14 +264,7 @@ nav a:visited {
   margin: 0.25rem;
 }
 
-.main {
-  height: 85vh;
-  background-color: #f3f3f3;
-  background-image: url(../img/bg_main.png);
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 
 .services {
   background-image: url(../img/services.png);
@@ -369,7 +374,13 @@ textarea:focus-visible {
 
 footer {
   width: 100%;
-  margin-top: 2em;
+}
+
+footer .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 /* Survey type toggle buttons */
